@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pig Game</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="board">
+        <div class="board-first board-half active">
+          <p class="board-title">PLAYER 1</p>
+          <span class="board-score">0</span>
+          <div class="board-box">
+            <p class="board-box-text">Current</p>
+            <div class="board-box-score">0</div>
+          </div>
+        </div>
+        <div class="board-second board-half">
+          <p class="board-title">PLAYER 2</p>
+          <span class="board-score">0</span>
+          <div class="board-box">
+            <p class="board-box-text">Current</p>
+            <div class="board-box-score">0</div>
+          </div>
+        </div>
+        <div class="board-buttons">
+          <button type="button" class="board-btn board-btn-new">
+            🔄 New game
+          </button>
+          <span class="board-dice">-</span>
+          <button type="button" class="board-btn board-btn-roll">
+            🎲 Roll dice
+          </button>
+          <button type="button" class="board-btn board-btn-hold">
+            📥 Hold
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal-close">❌</button>
+        <p class="modal-text"><span></span> won!!!</p>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
